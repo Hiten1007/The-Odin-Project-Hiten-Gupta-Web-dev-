@@ -1,0 +1,39 @@
+*{
+    margin : 10px;
+    padding : 30px;
+}
+.body{
+    background-color: #E7E8D1;
+}
+.header{
+    margin : 0;
+    text-align: center;
+    color : #75b984;
+}
+
+.btn{
+    padding : 0;
+    margin : 0;
+    border-radius: 15px;
+}
+
+.image{
+    padding : 0;
+    margin : 0;
+    border : solid;
+    border-color : #B85042;
+    border-radius: 15px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+#result{
+    text-align: center;
+}
+
+.results{
+    text-align: center;
+}

@@ -4,66 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js" defer></script>
 </head>
-<body>
-    <script>
-        function getComputerChoice(){
-            let x = Math.random();
-                if(x < 0.33){
-                    return "rock";
-                }
-                else if(x < 0.66){
-                    return "paper";
-                }
-                else{
-                    return "scissors";
-                }
-            }
-        function getHumanChoice() {
-            let x;
-            do {
-                x = prompt("Enter your choice (rock, paper, or scissors): ");
-                x = x ? x.toLowerCase() : "";
-            } while (x !== "rock" && x !== "paper" && x !== "scissors");
-            return x;
-        }
-
-        function playGame(){
-            let humanScore = 0;
-            let computerScore = 0;
-            function playRound(computerChoice, humanChoice){
-                let c = computerChoice;
-                let h = humanChoice;
-                if((c === "paper" && h == "rock") || (c === "scissors" && h === "paper") || (c === "rock" && h == "scissors")){
-                    computerScore++;
-                    return "You lose! " + c + " beats " + h;  
-                }
-                if((h === "paper" && c === "rock") || (h === "scissors" && c === "paper") || (h === "rock" && c == "scissors")){
-                    humanScore++;
-                    return "You win! " + h + " beats " + c;  
-                }
-                else{
-                    return "Ohh u both drew same!!!";
-                }
-            }
-
-            for(let i = 0; i < 5; i++){
-                const computerChoice = getComputerChoice();
-                const humanChoice = getHumanChoice();
-                alert(playRound(computerChoice, humanChoice) + "\n" + (computerScore + " " + humanScore));
-            }
-            if(computerScore === humanScore){
-                alert("A tie!!! No one wins");
-            }
-            else if(computerScore > humanScore){
-                alert("Computer wins!!! Better luck next time.");
-            }
-            else{
-                alert("Congratulations!!! You won.");
-            }
-        }
-        playGame();
-    </script>
-    
+<body class = "body">
+    <h1 class = "header">Rock-Paper-Scissors-Game</h1>
+    <div class = "buttons">
+        <button class="btn" id = "rock">
+            <img class = "image" src = "https://m.media-amazon.com/images/I/51rOMX5z40L.jpg" height = 150px width = 150px>
+        </button>
+        <button class="btn" id = "paper">
+            <img class = "image" src ="https://spaldingeducationstore.org/cdn/shop/products/paper-spalding-vertical-paper-5-8-inch-pa1_1000x.jpg?v=1683973391" height = "150px" width = "150px">
+        </button>
+        <button class="btn" id = "scissors">
+            <img class = "image" src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhMVFRUWEhcYFhYXFhcXExgXFRUWFxYYFRcaHSkgGB0lGxcVIjEjJSorMC4uFx8zODUtNygtLisBCgoKDg0NDg0NDysZFRkrKystKysrKys3LSsrKysrKystNystLSstLS0rKysrKys3KysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcECAECBQP/xABEEAABAwICBwQGCAMGBwAAAAABAAIDBBEhMQUGEkFRYYEHE3GRIjJCUqGxI2JygpLB0fAzU9IUFRdDk6IINGOywuHx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8AvFdJ2bTSAS0kEbQzHMLuiCJTawT0j+7qWCRvsyN9EuHG2RPLBe5o3TUE/wDDeNr3Tg/yOfRZGkKBk7CyQXB8wdxB3FVrp7QclK7HFhPovHyPAoLTRVlovWyohsHHvG8H59HZ+d1L9Fa1081gXd273X4Do7I/BB7yIEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQF854GvaWvAc0ixByK+iIK71j1VdDeSG748yM3M8eI5+fFRiyutRXWHVFsl5ILNfmW5Md4e6fggiOitPT09gx92+470mdBu6WUy0VrlDJZso7p3E4sPXd181X9RTOjcWvaWuGYOa+SC6WPBAIIIORGIPgV2VR6M0xNAfo3kDe04sPiFMtE66xvs2Yd273hjGfzb+8UEqRdY5A4AtIIORBuD4FdkBERAREQEREBERAREQEREBERAREQEREBERAREQEREBFHdP6t96TJC4xy77EhrvG2R5qFVNfWU7tl8krSNxc4jpfBBa6Krodb6pv+Zfxa0/ldZsOvc49ZkbujgfmgsRFCodfx7cB+6+/wACFnQ670xzEjfFoI+BQexpbREVQ20jcRk4YOb4H8slX2ndW5ae7rbcfvgZfaG75KcQ6z0jspgPtBzfmFnxV0UnqyRuvuDmn80FOkLhWFpzU5kl3wWY73fYPh7vyUFrqN8LiyRpa7gfmDkR4IProzS80BvE8gb25tPi3JTXRGukUlmzDu3e9nGfzb18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" height = 150px width = 150px>
+        </button>
+    </div>
+    <div id = "score" class = "results"></div>
+    <div id = "roundResult" class = "results"></div>
+    <div id = "result" class = "results"></div>
 </body>
 </html>
