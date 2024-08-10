@@ -1,0 +1,37 @@
+.input{
+    display : flex;
+    justify-content: center;
+    padding:10px;
+    margin:25px;
+}
+
+.input2{
+    display : flex;
+    justify-content: space-around;
+    padding:5px;
+    margin:25px 100px 25px 100px;
+}
+
+#btn{
+    margin : 0 20px;
+    padding : 15px 20px;
+}
+
+.buttons{
+    padding : 15px 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #82b74b;
+    background-color: #82b74b;
+    color : #dae292;
+    font-weight:bold;
+}
+
+.size{
+    color : #405d27;
+    margin : 15px 0 0 0;
+}
+
+.body{
+    background-color: #dac292;
+}
