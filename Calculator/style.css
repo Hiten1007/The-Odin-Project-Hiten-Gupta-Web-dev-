@@ -1,0 +1,41 @@
+
+#container{
+    width:fit-content;
+    height:fit-content;
+    margin:auto;
+    margin-top: 100px;
+    padding : 5px;
+    background-color: black;
+}
+
+#display{
+    padding : 30px 40px 30px 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #b2b9b7;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button{
+    width : 80px;
+    height: 80px;
+    border : solid;
+    border-color: black;
+}
+
+.operator{
+    background-color: #FF8F1F;
+}
+
+.others{
+    background-color: dodgerblue;
+}
+
+.num, #decimal{
+    background-color: #217C7E;;
+}
