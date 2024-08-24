@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <section class = "container">
+    <div class ="left">
+        <div class = "image">
+            <img src = "https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" height = "125px" width = "90px">
+        <div class = "rtext">
+            Odin
+        </div>
+        </div>
+        <div class = "btext">
+            Photo by <a href = "https://unsplash.com/@jor9en" style ="color :white">Jorgen Hendriksen</a> on <a href ="https://unsplash.com/" style ="color :white">Unsplash</a>
+        </div>
+    </div>
+    <div class = "right">
+        <div class = "text">
+        <div style ="font-weight: bold; font-size:larger; font-family: sans-serif;">
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+        </div>
+        <div style="font-weight: bold; font-size:larger; font-family: sans-serif;">
+        <br>
+        
+        You <i>know</i> you want to.
+        </div>
+        </div>
+        <form action = "" method = "post">
+           <fieldset class = "top">
+            <div class = "titletext" style="font-weight: bolder; font-size:larger; font-family: sans-serif;">Let's do this!</div>
+            <div class = "cols">
+            <div class = "col" id = "col1">
+            <div class="cells">
+                <label for = "first_name">FIRST NAME</label>
+                <input type = "text" id = "first_name" name = "first_name" class = "cell" required>
+            </div>
+
+            <div class="cells">
+                <label for = "email">EMAIL</label>
+                <input type = "email" id = "email" name = "email" class = "cell" placeholder="you@example.com" example ="you@example.com" required>
+            </div>
+
+            <div class="cells">
+                <label for = "password">PASSWORD</label>
+                <input type = "password" id ="password" name = "password" class = "cell" required>
+            </div>
+            </div>
+
+            <div class="col" id = "col2">
+            
+            <div class = "cells">
+            <label for = "last_name">LAST NAME</label>
+            <input type = "text" id = "last_name" name = "last_name" class = "cell" required>
+            </div>
+
+            <div class="cells">
+                <label for = "number">PHONE NUMBER</label>
+                <input type = "tel" id = "number" name = "number" class = "cell" required>
+            </div>
+
+            <div class="cells">
+                <label for = "confirm">CONFIRM PASSWORD</label>
+                <input type = "password" id = "confirm" name = "confirm" class = "cell" required>
+            </div>
+            
+
+            </div>
+            </div>
+           </fieldset>
+
+           <div class = "create">
+            <button class = "button">Create Account</button>
+            <div class = "login" style="font-family: 'Courier New', Courier, monospace;">Already have an Account? <a style = "color:#596D48; font-weight: bold;">Log in</a></div>
+           </div>
+        </form>
+    </div>
+    </section>
+</body>
+</html>

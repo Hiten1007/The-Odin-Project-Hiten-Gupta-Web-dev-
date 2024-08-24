@@ -1,0 +1,137 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height:60rem;
+}
+
+
+.left{
+    background-image: url("https://mclilzee.github.io/sign-up-form/jorgen-hendriksen-mvEQK9PzKQY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    flex:1;
+    height: 100%;
+    position: relative;
+}
+.right{
+    flex:1;
+    flex-grow: 1.55;
+    height: 100%;
+}
+
+
+.text{
+    margin:8rem 6rem 4rem 2.5rem;
+}
+
+fieldset{
+    border-radius: 30;
+    border-style: solid;
+    border-color: #E5E7EB;
+    border-top: 10;
+}
+
+.cols{
+    margin:0px 14px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:25px 50px;
+}
+
+.create{
+    padding:40px;
+}
+
+.button{
+    padding: 14px 45px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    background-color: #596D48;
+    color:white;
+    font-size: large;
+    font-weight:bold;
+    border-radius: 10px;
+    border-color:#596D48;
+}
+
+.login{
+    margin-left: 8px;
+}
+
+.titletext{
+    margin: 20px 28px 0px;
+}
+
+.image{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: FirstFont;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
+.rtext{
+    color:white;
+    opacity: 1;
+    margin-top: 15px;
+    font-size: 90px;
+    font-family: FirstFont;
+}
+
+.btext{
+    position:absolute;
+    bottom:0;
+    color:white;
+    padding:0 8rem;
+    font-size:small;
+    margin-bottom: 1rem;
+}
+
+.cells{
+    letter-spacing:2px;
+    display:inherit;
+    flex-direction: inherit;
+    margin-bottom: 2rem;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: small;
+}
+
+#col1{
+    padding-left: 22px;
+}
+
+#col2{
+    margin-left: 40px;
+}
+
+.cell:focus{
+    box-sizing: border-box;
+    border: 2px solid blue;
+    outline:none;
+}
+
+
+#confirm:focus{
+    box-sizing: border-box;
+    border: 2px solid red;
+    outline:none;
+}
+
