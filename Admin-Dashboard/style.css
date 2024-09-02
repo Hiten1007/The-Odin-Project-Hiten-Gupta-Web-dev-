@@ -1,0 +1,168 @@
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+#headie{
+    margin:10px;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+}
+
+#tophead{
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.header1{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    margin:1rem 2rem;
+    margin-bottom: 0;
+}
+
+
+.header11{
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+#search{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(224, 224, 224);
+    background-color:rgba(224, 224, 224);
+}
+
+.header12{
+    display:grid;
+    grid-template-columns: 0.25fr 0.25fr 1fr;
+    padding-left:40px;
+    padding-right: 40px;
+}
+
+.header2{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header3{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    margin:1rem;
+}
+
+.header31{
+    margin-top: 8px;
+    
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2.5rem;
+    padding:2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.button{
+    font-weight: bold;
+    color:white;
+    background-color: #3b82f6;
+    border-style: solid;
+    border-color: #3b82f6;
+    border-radius: 18px;
+    padding:10px;
+}
+
+.contents{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+.boxes{
+    display:grid;
+    grid-template:  repeat(3, 1fr)/repeat(2, 1fr);
+    gap:2rem;
+    margin:18px;
+}
+
+.box{
+    position: relative;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.4fr;
+    background-color: white;
+    padding:12px;
+    border-left-style: solid;
+    border-color: rgb(255, 175, 2);
+    border-width: 1.75vh;
+}
+
+
+.icons{
+   position:absolute;
+   bottom:0;
+   right:0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap:25px;
+   padding:15px;
+}
+
+.boxes2{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap:0px;
+    background-color: white;
+    margin:18px;
+    padding: 24px;
+    padding-bottom: 0px;
+}
+
+.box2{
+    padding:2px;
+}
+
+.uppersidebar, .lowersidebar{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    padding: 10px;
+}
+
+.side{
+    background-color: #3b82f6;  
+}
+
+.sideside{
+    color:white;
+}
+
+.upperside, .lowerside{
+    margin: 13px;
+    padding:10px;
+}
+
+.tags{
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+    margin:18px;
+    padding:6px 18px;
+    background-color: white;
+    padding:18px;
+}
+
+.tag{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    padding:8px;
+}
+
+.tags, .boxes2, .box{
+    border-radius:10px;
+}
