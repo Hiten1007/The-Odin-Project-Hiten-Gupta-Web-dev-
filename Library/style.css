@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    position: relative;
+}
+body{
+    height:auto;
+    background-color: pink;
+}
+
+.header{
+    text-align: center;
+    background-color: brown;
+    color:white;
+    padding:2rem;
+}
+
+
+
+.Shelf{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 1rem;
+    margin:2rem;
+}
+
+.adding{
+    font-size:2rem;
+    position: absolute;
+    top : 0;
+    right:0;
+    margin:1rem;
+    padding:1rem;
+    border-radius: 4rem;
+    border-style:solid;
+    background-color: white;
+    border-color: white;
+    width:4.5rem;
+}
+
+.form{
+    margin:auto;
+    padding:2rem;
+}
+
+.formup{
+    padding:2rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+}
+
+.create{
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: chartreuse;
+    border-radius: 18px;
+    border-style:solid;
+    border-color:chartreuse
+}
+
+.cancel{
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 18px;
+    border-style:solid;
+}

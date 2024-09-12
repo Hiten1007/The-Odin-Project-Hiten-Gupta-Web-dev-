@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class = "header">Library</h1>
+    <button class = "adding">+</button>
+    <dialog class = "form">
+        <form action = "" method = "dialog">
+            <fieldset class = "formup">
+                <div>
+                    <label for = "name">Name of the Book :</label>
+                    <input type = "text" id = "name" name ="name" required>
+                </div>
+                <div>
+                    <label for = "pages">Number Of Pages :</label>
+                    <input type = "number" id = "pages" name = "pages" required>
+                </div>
+                <div>
+                    <label for = "author">Name of the author</label>
+                    <input type = "text" id = "author" name = "author" required>
+                </div>
+                <div>
+                    <label for = "price">Price of the Book: </label>
+                    <input type = "number" id = "price" name = "price" required>
+                </div>
+                <div>
+                    <label for="read">Read?</label>
+                    <input type = "checkbox" id = "read" name = "read" required>
+                </div>
+            </fieldset>
+
+            <div style = "display:flex;flex-direction:row; justify-content: space-between;">
+                <div>
+                    <button class = "create">Create</button>
+                </div>
+                <div>
+                    <button class = "cancel" style = "background-color : aqua; border-color: aqua;">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+    <container class = "Shelf" ></container>
+</body>
+</html>
