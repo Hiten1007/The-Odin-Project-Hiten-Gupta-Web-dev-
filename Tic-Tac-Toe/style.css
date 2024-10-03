@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+
+.headie{
+    text-align: center;
+}
+
+.players{
+    display :flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+}
+
+.starts{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    position: fixed;
+    display:flex;
+    justify-content: space-around;
+    bottom:0;
+}
