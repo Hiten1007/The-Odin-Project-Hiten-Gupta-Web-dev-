@@ -23,8 +23,20 @@ h1{
 }
 
 .navbar{
-    position: fixed;
-    display:flex;
+    display : flex;
     justify-content: space-around;
+    position: fixed;
     bottom:0;
+    left:34rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.turn{
+    display : flex;
+    justify-content: center;
 }

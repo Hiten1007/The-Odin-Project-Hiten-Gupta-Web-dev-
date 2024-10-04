@@ -49,6 +49,7 @@ const Game = (function() {
         activeplayer = player.getPlayer(1);
         updateTurnDisplay();
         document.querySelectorAll(".box").forEach(box => box.textContent = ""); 
+        document.querySelectorAll(".box").forEach(box => box.style.padding = "3rem"); 
     }
 
     function createDisplay() {
@@ -59,12 +60,26 @@ const Game = (function() {
         const scores = document.createElement("div");
 
         for(let i = 0; i < 3; i++){
+            const scorediv = document.createElement("div");
             const score = document.createElement("div");
+            const scoretext = document.createElement("div");
+            if(i == 0){
+                scoretext.textContent = `${player.getPlayer(i + 1).name}'s score :`;
+            }
+            if(i == 1){
+                scoretext.textContent = `Draw score :`;
+            }
+            if(i == 2){
+                scoretext.textContent = `${player.getPlayer(i).name}'s score :`
+            }
             score.classList.add("scores");
             score.textContent = "0";
             score.setAttribute("id", "score" + i);
-            scores.appendChild(score);
+            scorediv.appendChild(scoretext);
+            scorediv.appendChild(score);
+            scores.appendChild(scorediv);
         }
+        scores.classList.add("scoreboard");
         layout.appendChild(scores);
 
         const turn = document.createElement("div");
