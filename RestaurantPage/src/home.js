@@ -1,1 +1,0 @@
-const home = document.querySelector("")
