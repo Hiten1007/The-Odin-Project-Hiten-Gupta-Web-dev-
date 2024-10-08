@@ -1,11 +1,12 @@
 import {home} from "./home.js";
+import {menu} from "./menu.js";
 
 export const intialPage = (function() {
 
     function createDisplay(){
         const header = document.querySelector("#mainheader");
         
-        header.appendChild("Taste Haven", "h1");
+        header.appendChild(menu.createHeading("Taste Haven", "h1"));
         const nav = document.createElement("nav");
 
 

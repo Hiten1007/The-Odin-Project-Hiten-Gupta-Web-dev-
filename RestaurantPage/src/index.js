@@ -6,10 +6,9 @@ import { intialPage } from "./Routes/initial-page-load.js";
 
 const Page = (function () {
     function addNavEvents(){
-        const content = document.querySelector("#content");
         const homeButton = document.querySelector("#home");
-        const menuButton = document.querySelector("menu");
-        const aboutButton = document.querySelector("aboutus");
+        const menuButton = document.querySelector("#menu");
+        const aboutButton = document.querySelector("#aboutus");
 
         homeButton.addEventListener("click", ()=>{
             content.textContent = "";
@@ -30,4 +29,6 @@ const Page = (function () {
     return {addNavEvents};
 })();
 
+
 intialPage.createDisplay();
+Page.addNavEvents();
