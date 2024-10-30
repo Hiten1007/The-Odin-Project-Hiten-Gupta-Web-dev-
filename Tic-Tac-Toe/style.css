@@ -1,9 +1,43 @@
-h1{
+*{
+    margin : 0;
+    padding: 0;
+}
+
+.menu, .layout{
+    position:relative;
+    height:39rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding:2rem;
+}
+
+.menu{
+    background-image: url("https://images4.alphacoders.com/839/839623.jpg");
+}
+
+.layout{
+    background-image: url("https://wallpapers.com/images/hd/water-and-fire-wolf-i4skk6vpjn8lpyyn.jpg");
+}
+
+
+
+.header{
+    background-color: rgb(110, 24, 110);
+    color:white;
     text-align: center;
+    padding : 25px 20px;
+    margin:0rem 25rem 10px;
+    border:solid rgb(175, 73, 124);
+    border-radius: 4rem;
 }
 
 .headie{
     text-align: center;
+    color:  #f5deb3;
+    background-color: rgb(20, 116, 32);
+    margin: 0 32rem;
+    padding:0.5rem;
+    border-radius: 1.7rem;
 }
 
 .players{
@@ -24,19 +58,55 @@ h1{
 
 .navbar{
     display : flex;
-    justify-content: space-around;
-    position: fixed;
-    bottom:0;
-    left:34rem;
+    justify-content: center;
+    margin : 1rem;
+}
+
+.navbtn{
+    margin:0 1rem;
+    padding: 0.75rem 2.1rem;
+    background-color: rgb(25, 96, 155);
+    border-color: rgb(27, 117, 190);
+    border-radius: 1.2rem;
+    color:white;
 }
 
 .scoreboard{
     display: flex;
     justify-content: space-around;
-    margin: 2rem;
+    margin: 1rem 4rem;
+   
+    padding:1rem;
 }
 
 .turn{
-    display : flex;
-    justify-content: center;
+    text-align: center;
+    color:  #f5deb3;
+    background-color: rgb(20, 116, 32);
+    border-radius: 1.7rem;
+}
+
+.start{
+    padding:0.35rem 1.75rem;
+    border-radius: 2rem;
+    background-color: #ff6347;
+    color: #fff;
+    border-color: #ff6347;
+}
+
+.scores{
+    background-color:rebeccapurple;
+    padding: 1rem;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+}
+
+.box{
+    background-color: #ff6347;
+    color:khaki;
+}
+
+.score{
+    margin-left: 0.5rem;
 }

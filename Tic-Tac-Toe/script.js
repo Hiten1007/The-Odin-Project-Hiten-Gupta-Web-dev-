@@ -57,6 +57,11 @@ const Game = (function() {
         display.hideMenu();
         activeplayer = player.getPlayer(1);
 
+        const scoreHead = document.createElement("h1");
+        scoreHead.textContent = "Scores";
+        scoreHead.classList.add("header");
+        layout.appendChild(scoreHead);
+
         const scores = document.createElement("div");
 
         for(let i = 0; i < 3; i++){
@@ -72,9 +77,10 @@ const Game = (function() {
             if(i == 2){
                 scoretext.textContent = `${player.getPlayer(i).name}'s score :`
             }
-            score.classList.add("scores");
+            score.classList.add("score");
             score.textContent = "0";
             score.setAttribute("id", "score" + i);
+            scorediv.classList.add("scores");
             scorediv.appendChild(scoretext);
             scorediv.appendChild(score);
             scores.appendChild(scorediv);
@@ -85,7 +91,7 @@ const Game = (function() {
         const turn = document.createElement("div");
         turn.classList.add("turn");
         turn.textContent = `${activeplayer.name}'s turn`; 
-        turn.style = "margin : 2px; padding : 2px;"
+        turn.style = "margin : 0 32rem 1rem; padding : 0.5rem;"
 
         layout.appendChild(turn);
 
@@ -97,11 +103,11 @@ const Game = (function() {
             box.addEventListener("click", (e) => {
                 getIndex(e);
             });
-            box.style = "display: flex; justify-content: center; align-items: center; border-style: solid; border-color: black; padding: 3rem; font-size: 2rem; box-sizing: border-box;";
+            box.style = "display: flex; justify-content: center; align-items: center; border-style: solid; border-color: khaki; padding: 3rem; font-size: 2rem; box-sizing: border-box;";
             boxes.appendChild(box);
         }
 
-        boxes.style = "display: grid; grid-template-columns: repeat(3, 1fr); margin:0 30rem; border-style : solid; border-color : black; ";
+        boxes.style = "display: grid; grid-template-columns: repeat(3, 1fr); margin:0 30rem; border-style : solid; border-color : khaki; ";
         layout.appendChild(boxes);
 
 
